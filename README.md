@@ -128,13 +128,6 @@ I would like to thank microverse for providing this react project and all the ma
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## ❓ FAQ (OPTIONAL) <a name="faq"></a>
-
-- **[How to connect redux to react app?]**
-- **[How to work with API using redux]**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
