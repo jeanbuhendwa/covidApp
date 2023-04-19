@@ -53,7 +53,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Demo Video]()
+- [Demo Video](https://www.loom.com/share/7a07ff668a6a41a3ae270572af911b39)
 - [Live Demo Link](https://john-covidapp.netlify.app)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
