@@ -1,4 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
+
 * {
   padding: 0;
   margin: 0;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.main-nav {
+  width: 100%;
+}
+
+.nav-menu {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  background: #731f1f;
+}
+
+.backLink {
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #bad9ce;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.menu-icons {
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #bad9ce;
+}
+
+.title-header {
+  font-size: 24px;
+  letter-spacing: -1.5px;
+  color: #5a8c8c;
+  text-shadow: 0 1.5px 1px rgba(186, 217, 206, 0.5);
+}
+
+.title-span {
+  color: #bad9ce;
+}
+
+.branding {
+  height: 30vh;
+  background: #fff;
+  background-image: url('./img/covid.jpeg');
+  background-repeat: no-repeat;
+  background-position: left 65%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 60px 40px 20px;
+  border-bottom: 2px solid #731f1f;
+}
+
+.brand-text {
+  width: 60%;
+  text-align: start;
+  font-size: 26px;
+  font-weight: 700;
+  color: #731f1f;
+  text-shadow:
+    0 1px 0 #ccc,
+    0 2px 0 #c9c9c9,
+    0 3px 0 #bbb,
+    0 4px 0 #b9b9b9,
+    0 5px 0 #aaa,
+    0 6px 1px rgba(0, 0, 0, 0.1),
+    0 0 5px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.3),
+    0 3px 5px rgba(0, 0, 0, 0.2),
+    0 5px 10px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.2),
+    0 20px 20px rgba(0, 0, 0, 0.15);
+}
+
+.countries-container {
+  background: #edfaf5;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  /* grid-auto-rows: 200px; */
+  gap: 10px 10px;
+  list-style: none;
+  padding: 10px;
+}
+
+.countryDetails {
+  padding: 10px;
+  background: #731f1f;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 5px 2px #777;
+}
+
+.country-flag {
+  width: 100%;
+  height: 100px;
+}
+
+.country-title {
+  color: #bad9ce;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.country-pop {
+  color: #bad9ce;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.pop-span {
+  color: #fff;
+  font-size: 14px;
+}
+
+.country-detail {
+  padding: 60px 0 20px;
+  background: #731f1f;
+  height: 100vh;
+}
+
+.country-detail ul {
+  list-style: none;
+}
+
+.about-brand {
+  height: 20vh;
+  padding: 20px 20px 20px;
+}
+
+.about-brand .brand-text {
+  width: 40%;
+}
+
+.general,
+.total-case,
+.current-stats {
+  padding: 20px;
+  margin: 10px;
+  background: #bad9cea2;
+  border-radius: 5px;
+  box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+.total-case h3,
+.current-stats h3 {
+  text-align: center;
+  color: #bad9ce;
+  text-shadow: 0 2px 2px #232323;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 28px;
+  margin: 2px 0 12px;
+}
+
+.current-total,
+.current-case {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.current-total li,
+.current-case li {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  color: #3b0303;
+}
+
+.current-icon {
+  color: #214444;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.current-text {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.general ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.general li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  color: #3b0303;
+}
+
+.general-icon {
+  color: #214444;
+  font-size: 24px;
 }
