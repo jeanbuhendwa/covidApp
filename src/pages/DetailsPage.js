@@ -23,8 +23,10 @@ const Country = () => {
     if (CountryStore.length === 0) {
       FetchStats().then((response) => dispatch(GetStats(response)));
     }
-  });
-
+  }, []);
+  if (!findCountry) {
+    return <div>Country not found</div>;
+  }
   return (
     <section className="country-detail">
       <div className="branding about-brand">
